@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Keyboard Trainer</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>Keyboard Trainer</h1>
+		<h2>
+			Press: <span id="press"></span>
+		</h2>
+		<object class="svgClass" type="image/svg+xml" data="keyboard.svg" onload="start()"></object>
+		<br />
+		<h2>
+		Score: <span id="score">0</span> &nbsp; &nbsp; &nbsp;
+		Level: <span id="level">1</span>
+		</h2><br />
+		<button type="button" onclick="changeKeys('vowels',true)">Vowels</button>
+		<button type="button" onclick="changeKeys('other',true)">Others</button>
+		<button type="button" onclick="changeKeys('doubles',true)">Doubles</button>
+		<button type="button" onclick="changeKeys('numbers',true)">Numbers</button>
+		<button type="button" onclick="changeKeys('vowelsotherdoubles',true)">All Letters</button>
+		<button type="button" onclick="start()">Restart</button>
+	</body>
+</html>
+
